@@ -9,7 +9,10 @@ uses
 begin
   try
     if (ParamCount < 2) then
-      Writeln('Using: EAN128 <CODE> <FILENAME>')
+    begin
+      Writeln('Using: EAN128 <CODE> <FILENAME>');
+      ExitCode := 1;
+    end
     else
     begin
       var BC := TZintBarcode.Create;

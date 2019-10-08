@@ -1,4 +1,5 @@
 program EAN128;
+// https://en.wikipedia.org/wiki/GS1-128
 
 {$APPTYPE CONSOLE}
 {$R *.res}
